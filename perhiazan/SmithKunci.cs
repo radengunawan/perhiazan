@@ -15,6 +15,7 @@ namespace perhiazan
         {
             aman.Maling(this);
             string kontenAman = aman.Buka(this.Kombinasi);
+            KembalikanIsinya(kontenAman, pemilikzz);
         }//END void BukaAman 
 
 
