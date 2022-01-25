@@ -8,7 +8,20 @@ namespace perhiazan
     {
         public string Kombinasi
         {
-             get;  set;
+             private get;  set;
         } 
-    }
+
+        public void BukaAman (AmanDong aman, PemainAman pemilikzz)
+        {
+            aman.Maling(this);
+            string kontenAman = aman.Buka(this.Kombinasi);
+        }//END void BukaAman 
+
+
+        protected void KembalikanIsinya (string kontenAman, PemainAman owner)
+        {
+            owner.MenerimaKonten(kontenAman);
+        }
+
+    } //END class
 }
